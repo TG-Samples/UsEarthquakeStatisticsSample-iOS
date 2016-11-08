@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4451" systemVersion="13A461" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--class Prefix:identifier View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3"/>
+                        <viewControllerLayoutGuide type="bottom" id="4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="226" translatesAutoresizingMaskIntoConstraints="NO" alpha="0.2">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" customColorSpace="calibratedWhite" colorSpace="calibratedRGB" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1"/>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="7" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="20" y="1026" width="367" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Item" id="8"/>
+                                </items>
+                            </toolbar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="9" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="0.0" y="980" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Item" id="10"/>
+                                </items>
+                                <constraints>
+                                    <constraint firstItem="9" firstAttribute="height" constant="44" id="278"/>
+                                </constraints>
+                            </toolbar>
+                            <view contentMode="scaleToFill" id="152" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="0.0" y="980" width="768" height="300"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleAspectFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="185" translatesAutoresizingMaskIntoConstraints="NO" indicatorStyle="2" pagingEnabled="YES" directionalLockEnabled="YES" alwaysBounceHorizontal="YES" showsVerticalScrollIndicator="NO">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="300"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                                        <prototypes>
+                                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="186">
+                                                <rect key="frame" x="0.0" y="22" width="768" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="187" tableViewCell="186">
+                                                    <rect key="frame" x="0.0" y="0.0" width="768" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </tableViewCell>
+                                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="188">
+                                                <rect key="frame" x="0.0" y="66" width="768" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="189" tableViewCell="188">
+                                                    <rect key="frame" x="0.0" y="0.0" width="768" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </tableViewCell>
+                                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="190">
+                                                <rect key="frame" x="0.0" y="110" width="768" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="191" tableViewCell="190">
+                                                    <rect key="frame" x="0.0" y="0.0" width="768" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <color key="sectionIndexTrackingBackgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </tableView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="152" firstAttribute="height" constant="300" id="162"/>
+                                    <constraint firstItem="152" firstAttribute="trailing" secondItem="185" secondAttribute="trailing" constant="0.0" id="192"/>
+                                    <constraint firstItem="185" firstAttribute="leading" secondItem="152" secondAttribute="leading" constant="0.0" id="193"/>
+                                    <constraint firstItem="185" firstAttribute="top" secondItem="152" secondAttribute="top" constant="0.0" id="194"/>
+                                    <constraint firstItem="152" firstAttribute="bottom" secondItem="185" secondAttribute="bottom" constant="0.0" id="195"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" id="228" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="193" y="430" width="382" height="164"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" customColorSpace="calibratedWhite" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Please Input Your Bing Maps Key:" lineBreakMode="tailTruncation" minimumFontSize="10" id="229" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                        <rect key="frame" x="10" y="14" width="360" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="" borderStyle="roundedRect" minimumFontSize="17" id="230" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" placeholder="Your Bing Maps Key">
+                                        <rect key="frame" x="10" y="50" width="360" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="231" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
+                                        <rect key="frame" x="10" y="111" width="175" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <state key="normal" title="OK">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnOk_TouchUpInside:" destination="BYZ-38-t0r" id="256" eventType="touchUpInside"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="232" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
+                                        <rect key="frame" x="197" y="111" width="175" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleShadowColor" colorSpace="calibratedRGB" red="0.49803921568627452" green="0.49803921568627452" blue="0.49803921568627452" alpha="1"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnCancel_TouchUpInside:" destination="BYZ-38-t0r" id="255" eventType="touchUpInside"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="228" firstAttribute="height" constant="164" id="302"/>
+                                    <constraint firstItem="228" firstAttribute="width" constant="382" id="303"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint id="163" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="152" secondAttribute="trailing" constant="0.0"/>
+                            <constraint id="164" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="152" secondAttribute="bottom" constant="-256"/>
+                            <constraint firstItem="152" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="0.0" id="166"/>
+                            <constraint firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="226" secondAttribute="trailing" constant="0.0" id="250"/>
+                            <constraint firstItem="226" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="0.0" id="251"/>
+                            <constraint firstItem="226" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="0.0" id="252"/>
+                            <constraint firstItem="9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="0.0" id="276"/>
+                            <constraint firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="9" secondAttribute="trailing" constant="0.0" id="277"/>
+                            <constraint firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="9" secondAttribute="bottom" constant="0.0" id="298"/>
+                            <constraint firstItem="9" firstAttribute="bottom" secondItem="226" secondAttribute="bottom" constant="0.0" id="299"/>
+                            <constraint firstItem="8bC-Xf-vdC" firstAttribute="centerY" secondItem="228" secondAttribute="centerY" constant="0.0" id="300"/>
+                            <constraint firstItem="228" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="0.0" id="301"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="operationToolbar" destination="9" id="name-outlet-9"/>
+                        <outlet property="queryResultView" destination="152" id="name-outlet-152"/>
+                        <outlet property="tbvQueryResult" destination="185" id="name-outlet-185"/>
+                        <outlet property="lblBingMapKeyMessage" destination="229" id="name-outlet-229"/>
+                        <outlet property="btnOk" destination="231" id="name-outlet-231"/>
+                        <outlet property="btnCancel" destination="232" id="name-outlet-232"/>
+                        <outlet property="txtBingMapKey" destination="230" id="name-outlet-230"/>
+                        <outlet property="bingMapKeyAlertView" destination="228" id="name-outlet-228"/>
+                        <outlet property="alertViewShadow" destination="226" id="name-outlet-226"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <scene sceneID="39">
+            <objects>
+                <viewController id="40" sceneMemberID="viewController" customClass="OptionsViewController" storyboardIdentifier="OptionsViewController" restorationIdentifier="OptionsViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="37"/>
+                        <viewControllerLayoutGuide type="bottom" id="38"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="41">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="44" translatesAutoresizingMaskIntoConstraints="NO" reversesTitleShadowWhenHighlighted="NO">
+                                <rect key="frame" x="10" y="984" width="748" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <size key="titleShadowOffset" width="0" height="0"/>
+                                <state key="normal" title="Query">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnQuery_TouchUpInside:" destination="40" id="261" eventType="touchUpInside"/>
+                                </connections>
+                                <constraints>
+                                    <constraint firstItem="44" firstAttribute="height" constant="30" id="102"/>
+                                </constraints>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="46" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="0.0" y="20" width="768" height="954"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="47">
+                                        <rect key="frame" x="0.0" y="22" width="768" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="48" tableViewCell="47">
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="49">
+                                        <rect key="frame" x="0.0" y="66" width="768" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="50" tableViewCell="49">
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="51">
+                                        <rect key="frame" x="0.0" y="110" width="768" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="52" tableViewCell="51">
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="44" firstAttribute="leading" secondItem="41" secondAttribute="leading" constant="10" id="98"/>
+                            <constraint firstItem="41" firstAttribute="bottom" secondItem="44" secondAttribute="bottom" constant="10" id="100"/>
+                            <constraint firstItem="46" firstAttribute="top" secondItem="37" secondAttribute="bottom" constant="0.0" id="105"/>
+                            <constraint firstItem="41" firstAttribute="trailing" secondItem="46" secondAttribute="trailing" constant="0.0" id="106"/>
+                            <constraint firstItem="46" firstAttribute="leading" secondItem="41" secondAttribute="leading" constant="0.0" id="107"/>
+                            <constraint firstItem="41" firstAttribute="bottom" secondItem="46" secondAttribute="bottom" constant="50" id="108"/>
+                            <constraint firstItem="41" firstAttribute="trailing" secondItem="44" secondAttribute="trailing" constant="10" id="216"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnQuery" destination="44" id="name-outlet-44"/>
+                        <outlet property="tbvBaseMapType" destination="46" id="name-outlet-46"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="42" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="938" y="7"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackOpaque"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+    <resources>
+        <image name="slider-default-handle.png" width="23" height="23"/>
+        <image name="Slider.png" width="26" height="26"/>
+        <image name="search.png" width="32" height="32"/>
+        <image name="save.png" width="48" height="48"/>
+        <image name="recycle.png" width="26" height="32"/>
+        <image name="rectangle.png" width="32" height="32"/>
+        <image name="polygon.png" width="32" height="32"/>
+        <image name="pan.png" width="32" height="32"/>
+        <image name="options.png" width="30" height="30"/>
+        <image name="MapSuite.png" width="128" height="128"/>
+        <image name="displaytype_bing_road.png" width="32" height="32"/>
+        <image name="displaytype_bing_aerial.png" width="32" height="32"/>
+        <image name="displaytype.png" width="32" height="32"/>
+        <image name="capture.png" width="383" height="643"/>
+        <image name="basemap.png" width="32" height="32"/>
+        <image name="expand.png" width="48" height="40"/>
+        <image name="location.png" width="40" height="40"/>
+        <image name="Icon.png" width="57" height="57"/>
+        <image name="Icon-Small.png" width="29" height="29"/>
+        <image name="Icon-Small-50.png" width="50" height="50"/>
+        <image name="Icon-Small-40.png" width="40" height="40"/>
+        <image name="Icon-76.png" width="76" height="76"/>
+        <image name="Icon-72.png" width="72" height="72"/>
+        <image name="Icon-60.png" width="120" height="120"/>
+        <image name="Default.png" width="320" height="480"/>
+        <image name="Default-Portrait.png" width="768" height="1004"/>
+        <image name="Default-Landscape.png" width="1024" height="748"/>
+        <image name="Default-568h.png" width="640" height="1136"/>
+    </resources>
+</document>

@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FCA23344-8444-4B36-A21B-68F126FD4DD0}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>MapSuiteEarthquakeStatistics</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>MapSuiteEarthquakeStatistics</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchDebug>True</MtouchDebug>
+    <MtouchProfiling>False</MtouchProfiling>
+    <MtouchFastDev>False</MtouchFastDev>
+    <MtouchEnableGenericValueTypeSharing>True</MtouchEnableGenericValueTypeSharing>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchUseLlvm>False</MtouchUseLlvm>
+    <MtouchUseThumb>False</MtouchUseThumb>
+    <MtouchUseSGen>False</MtouchUseSGen>
+    <MtouchUseRefCounting>False</MtouchUseRefCounting>
+    <MtouchOptimizePNGs>True</MtouchOptimizePNGs>
+    <MtouchI18n />
+    <MtouchSdkVersion>9.2</MtouchSdkVersion>
+    <OptimizePNGs>True</OptimizePNGs>
+    <MtouchFloat32>False</MtouchFloat32>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchDebug>True</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchSdkVersion>8.1</MtouchSdkVersion>
+    <MtouchLink>Full</MtouchLink>
+    <MtouchProfiling>False</MtouchProfiling>
+    <MtouchExtraArgs>
+    </MtouchExtraArgs>
+    <MtouchFastDev>False</MtouchFastDev>
+    <MtouchEnableGenericValueTypeSharing>True</MtouchEnableGenericValueTypeSharing>
+    <MtouchArch>ARMv7</MtouchArch>
+    <MtouchUseLlvm>False</MtouchUseLlvm>
+    <MtouchUseThumb>False</MtouchUseThumb>
+    <MtouchUseSGen>False</MtouchUseSGen>
+    <MtouchUseRefCounting>False</MtouchUseRefCounting>
+    <MtouchOptimizePNGs>True</MtouchOptimizePNGs>
+    <MtouchI18n />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <BuildIpa>True</BuildIpa>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>MapSuiteEarthquakeStatistics.Application</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\BaseMapTypeController.cs" />
+    <Compile Include="Controllers\MainViewController.cs" />
+    <Compile Include="Controllers\MainViewController.designer.cs">
+      <DependentUpon>MainViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\OptionsViewController.cs" />
+    <Compile Include="Controllers\OptionsViewController.designer.cs">
+      <DependentUpon>OptionsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\UIRangeSlider\CERangeSliderKnobLayer.cs" />
+    <Compile Include="Controllers\UIRangeSlider\RangeChangedEventArgs.cs" />
+    <Compile Include="Controllers\UIRangeSlider\RangeSliderView.cs" />
+    <Compile Include="Controllers\UIRangeSlider\UIRangeSlider.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="Model\BaseMapType.cs" />
+    <Compile Include="Model\DataTableSource.cs" />
+    <Compile Include="Model\DisplayType.cs" />
+    <Compile Include="Shared\EarthquakeConstant.cs" />
+    <Compile Include="Model\EarthquakeToolBar.cs" />
+    <Compile Include="Shared\Global.cs" />
+    <Compile Include="Model\QueryConfiguration.cs" />
+    <BundleResource Include="Resources\Icon-60%402x.png" />
+    <BundleResource Include="Resources\Icon-72.png" />
+    <BundleResource Include="Resources\Icon-72%402x.png" />
+    <BundleResource Include="Resources\Icon-76.png" />
+    <BundleResource Include="Resources\Icon-76%402x.png" />
+    <BundleResource Include="Resources\Icon-Small-40.png" />
+    <BundleResource Include="Resources\Icon-Small-40%402x.png" />
+    <BundleResource Include="Resources\Icon-Small-50.png" />
+    <BundleResource Include="Resources\Icon-Small-50%402x.png" />
+    <BundleResource Include="Resources\Icon-Small.png" />
+    <BundleResource Include="Resources\Icon-Small%402x.png" />
+    <BundleResource Include="Resources\Icon.png" />
+    <BundleResource Include="Resources\Icon%402x.png" />
+    <BundleResource Include="Resources\Default%402x.png" />
+    <BundleResource Include="Resources\Default-568h%402x.png" />
+    <BundleResource Include="Resources\Default-Landscape.png" />
+    <BundleResource Include="Resources\Default-Landscape%402x.png" />
+    <BundleResource Include="Resources\Default-Portrait.png" />
+    <BundleResource Include="Resources\Default-Portrait%402x.png" />
+    <BundleResource Include="Resources\Default.png" />
+    <Content Include="AppData\SampleData\usEarthquake_Simplified.dbf" />
+    <Content Include="AppData\SampleData\usEarthquake_Simplified.ids" />
+    <Content Include="AppData\SampleData\usEarthquake_Simplified.idx" />
+    <Content Include="AppData\SampleData\usEarthquake_Simplified.shp" />
+    <Content Include="AppData\SampleData\usEarthquake_Simplified.shx" />
+    <None Include="Info.plist" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="AppData\SampleData\Countries02.dbf" />
+    <Content Include="AppData\SampleData\Countries02.ids" />
+    <Content Include="AppData\SampleData\Countries02.idx" />
+    <Content Include="AppData\SampleData\Countries02.shp" />
+    <Content Include="AppData\SampleData\Countries02.shx" />
+    <Content Include="AppData\SampleData\usEarthquake.dbf" />
+    <Content Include="AppData\SampleData\usEarthquake.ids" />
+    <Content Include="AppData\SampleData\usEarthquake.idx" />
+    <Content Include="AppData\SampleData\usEarthquake.shp" />
+    <Content Include="AppData\SampleData\usEarthquake.shx" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="GeoAPI, Version=1.7.4.0, Culture=neutral, PublicKeyToken=a1a0da7def465678, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\MapSuiteDependency-GeoAPI.10.0.0\lib\portable-net403+sl5+netcore45+wpa81+wp8+MonoAndroid10+XamariniOS10+MonoTouch10\GeoAPI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GeoAPI.Bootstrapper.NetTopologySuite, Version=1.14.0.0, Culture=neutral, PublicKeyToken=f580a05016ebada1, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\MapSuiteDependency-NetTopologySuite.10.0.0\lib\portable-net403+sl5+netcore45+wpa81+wp8+MonoAndroid10+XamariniOS10+MonoTouch10\GeoAPI.Bootstrapper.NetTopologySuite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NetTopologySuite, Version=1.14.0.0, Culture=neutral, PublicKeyToken=f580a05016ebada1, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\MapSuiteDependency-NetTopologySuite.10.0.0\lib\portable-net403+sl5+netcore45+wpa81+wp8+MonoAndroid10+XamariniOS10+MonoTouch10\NetTopologySuite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PowerCollections, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2573bf8a1bdddcd5, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\MapSuiteDependency-NetTopologySuite.10.0.0\lib\portable-net403+sl5+netcore45+wpa81+wp8+MonoAndroid10+XamariniOS10+MonoTouch10\PowerCollections.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="ThinkGeo.MapSuite, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.iOS, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\MapSuiteMobileForiOS-Standard.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.iOS.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Layers.Adornments, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.Adornments.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.Adornments.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Layers.Background, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.Background.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.Background.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Layers.BingMaps, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.BingMaps.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.BingMaps.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Layers.BoundarySolutionsParcel, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.BoundarySolutionsParcel.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.BoundarySolutionsParcel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Layers.Delimited, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.Delimited.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.Delimited.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Layers.GeoTiff, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.GeoTiff.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.GeoTiff.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Layers.GoogleMaps, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.GoogleMaps.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.GoogleMaps.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Layers.Gpx, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.Gpx.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.Gpx.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Layers.Graticule, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.Graticule.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.Graticule.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Layers.Grids, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.Grids.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.Grids.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Layers.Group, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.Group.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.Group.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Layers.Heat, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.Heat.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.Heat.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Layers.IsoLine, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.IsoLine.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.IsoLine.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Layers.MapShape, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.MapShape.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.MapShape.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Layers.MultipleFeatureSource, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.MultipleFeatureSource.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.MultipleFeatureSource.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Layers.NativeImage, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.NativeImage.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.NativeImage.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Layers.Noaa, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.Noaa.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.Noaa.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Layers.OpenStreetMap, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.OpenStreetMap.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.OpenStreetMap.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Layers.Restriction, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.Restriction.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.Restriction.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Layers.ShapeFile, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.ShapeFile.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.ShapeFile.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Layers.Tab, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.Tab.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.Tab.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Layers.TiledWms, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.TiledWms.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.TiledWms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Layers.TinyGeo, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.TinyGeo.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.TinyGeo.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Layers.Wfs, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.Wfs.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.Wfs.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Layers.WkbFile, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.WkbFile.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.WkbFile.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Layers.Wms, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.Wms.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.Wms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Layers.Wmts, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.Wmts.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.Wmts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Layers.WorldMapKit, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.WorldMapKit.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.WorldMapKit.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Styles.ClassBreak, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Styles.ClassBreak.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Styles.ClassBreak.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Styles.ClusterPoint, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Styles.ClusterPoint.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Styles.ClusterPoint.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Styles.Composite, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Styles.Composite.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Styles.Composite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Styles.DotDensity, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Styles.DotDensity.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Styles.DotDensity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Styles.Filter, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Styles.Filter.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Styles.Filter.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Styles.Gradient, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Styles.Gradient.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Styles.Gradient.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Styles.Icon, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Styles.Icon.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Styles.Icon.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Styles.IconValue, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Styles.IconValue.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Styles.IconValue.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Styles.Regex, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Styles.Regex.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Styles.Regex.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Styles.Value, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Styles.Value.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Styles.Value.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Styles.WellPoint, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Styles.WellPoint.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Styles.WellPoint.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\pan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\recycle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Slider.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\basemap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\capture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\displaytype.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\displaytype_bing_aerial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\displaytype_bing_road.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\displaytype_osm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="MainStoryboard_iPad.storyboard" />
+    <InterfaceDefinition Include="MainStoryboard_iPhone.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\polygon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\rectangle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\options.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\expand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\location.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>
