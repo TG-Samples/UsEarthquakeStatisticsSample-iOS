@@ -128,7 +128,7 @@ namespace MapSuiteEarthquakeStatistics
             // Maps
             iOSMap = new MapView(View.Frame);
             iOSMap.MapUnit = GeographyUnit.Meter;
-            iOSMap.ZoomLevelSet = new BingMapsZoomLevelSet();
+            iOSMap.ZoomLevelSet = new SphericalMercatorZoomLevelSet();
             iOSMap.CurrentExtent = new RectangleShape(-19062735.6816748, 9273256.52450252, -5746827.16371793, 2673516.56066139);
             iOSMap.BackgroundColor = new UIColor(233, 229, 220, 200);
 
