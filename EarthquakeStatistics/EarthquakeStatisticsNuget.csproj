@@ -173,19 +173,19 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="GeoAPI, Version=1.7.4.0, Culture=neutral, PublicKeyToken=a1a0da7def465678, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\MapSuiteDependency-GeoAPI.10.0.0\lib\portable-net403+sl5+netcore45+wpa81+wp8+MonoAndroid10+XamariniOS10+MonoTouch10\GeoAPI.dll</HintPath>
+      <HintPath>..\packages\MapSuiteDependency-GeoAPI.10.0.0\lib\portable-net403+sl5+netcore45+wpa81+wp8+MonoAndroid10+XamariniOS10+MonoTouch10\GeoAPI.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="GeoAPI.Bootstrapper.NetTopologySuite, Version=1.14.0.0, Culture=neutral, PublicKeyToken=f580a05016ebada1, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\MapSuiteDependency-NetTopologySuite.10.0.0\lib\portable-net403+sl5+netcore45+wpa81+wp8+MonoAndroid10+XamariniOS10+MonoTouch10\GeoAPI.Bootstrapper.NetTopologySuite.dll</HintPath>
+      <HintPath>..\packages\MapSuiteDependency-NetTopologySuite.10.0.0\lib\portable-net403+sl5+netcore45+wpa81+wp8+MonoAndroid10+XamariniOS10+MonoTouch10\GeoAPI.Bootstrapper.NetTopologySuite.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="NetTopologySuite, Version=1.14.0.0, Culture=neutral, PublicKeyToken=f580a05016ebada1, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\MapSuiteDependency-NetTopologySuite.10.0.0\lib\portable-net403+sl5+netcore45+wpa81+wp8+MonoAndroid10+XamariniOS10+MonoTouch10\NetTopologySuite.dll</HintPath>
+      <HintPath>..\packages\MapSuiteDependency-NetTopologySuite.10.0.0\lib\portable-net403+sl5+netcore45+wpa81+wp8+MonoAndroid10+XamariniOS10+MonoTouch10\NetTopologySuite.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="PowerCollections, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2573bf8a1bdddcd5, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\MapSuiteDependency-NetTopologySuite.10.0.0\lib\portable-net403+sl5+netcore45+wpa81+wp8+MonoAndroid10+XamariniOS10+MonoTouch10\PowerCollections.dll</HintPath>
+      <HintPath>..\packages\MapSuiteDependency-NetTopologySuite.10.0.0\lib\portable-net403+sl5+netcore45+wpa81+wp8+MonoAndroid10+XamariniOS10+MonoTouch10\PowerCollections.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -193,167 +193,19 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="ThinkGeo.MapSuite, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.dll</HintPath>
+      <HintPath>..\packages\ThinkGeo.MapSuite.10.0.312.2\lib\Xamarin.iOS10\ThinkGeo.MapSuite.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="ThinkGeo.MapSuite.iOS, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\MapSuiteMobileForiOS-Standard.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.iOS.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Layers.Adornments, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.Adornments.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.Adornments.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Layers.Background, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.Background.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.Background.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Layers.BingMaps, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.BingMaps.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.BingMaps.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Layers.BoundarySolutionsParcel, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.BoundarySolutionsParcel.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.BoundarySolutionsParcel.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Layers.Delimited, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.Delimited.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.Delimited.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Layers.GeoTiff, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.GeoTiff.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.GeoTiff.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Layers.GoogleMaps, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.GoogleMaps.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.GoogleMaps.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Layers.Gpx, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.Gpx.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.Gpx.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Layers.Graticule, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.Graticule.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.Graticule.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Layers.Grids, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.Grids.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.Grids.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Layers.Group, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.Group.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.Group.dll</HintPath>
+      <HintPath>..\packages\MapSuiteMobileForiOS-BareBone.10.0.312.2\lib\Xamarin.iOS10\ThinkGeo.MapSuite.iOS.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="ThinkGeo.MapSuite.Layers.Heat, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.Heat.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.Heat.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Layers.IsoLine, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.IsoLine.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.IsoLine.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Layers.MapShape, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.MapShape.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.MapShape.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Layers.MultipleFeatureSource, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.MultipleFeatureSource.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.MultipleFeatureSource.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Layers.NativeImage, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.NativeImage.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.NativeImage.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Layers.Noaa, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.Noaa.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.Noaa.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Layers.OpenStreetMap, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.OpenStreetMap.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.OpenStreetMap.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Layers.Restriction, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.Restriction.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.Restriction.dll</HintPath>
+      <HintPath>..\packages\ThinkGeo.MapSuite.Layers.Heat.10.0.312.2\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.Heat.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="ThinkGeo.MapSuite.Layers.ShapeFile, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.ShapeFile.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.ShapeFile.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Layers.Tab, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.Tab.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.Tab.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Layers.TiledWms, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.TiledWms.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.TiledWms.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Layers.TinyGeo, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.TinyGeo.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.TinyGeo.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Layers.Wfs, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.Wfs.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.Wfs.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Layers.WkbFile, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.WkbFile.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.WkbFile.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Layers.Wms, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.Wms.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.Wms.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Layers.Wmts, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.Wmts.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.Wmts.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Layers.WorldMapKit, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Layers.WorldMapKit.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.WorldMapKit.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Styles.ClassBreak, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Styles.ClassBreak.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Styles.ClassBreak.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Styles.ClusterPoint, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Styles.ClusterPoint.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Styles.ClusterPoint.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Styles.Composite, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Styles.Composite.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Styles.Composite.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Styles.DotDensity, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Styles.DotDensity.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Styles.DotDensity.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Styles.Filter, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Styles.Filter.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Styles.Filter.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Styles.Gradient, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Styles.Gradient.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Styles.Gradient.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Styles.Icon, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Styles.Icon.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Styles.Icon.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Styles.IconValue, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Styles.IconValue.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Styles.IconValue.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Styles.Regex, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Styles.Regex.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Styles.Regex.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Styles.Value, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Styles.Value.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Styles.Value.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Styles.WellPoint, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\ThinkGeo.MapSuite.Styles.WellPoint.10.0.305.1\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Styles.WellPoint.dll</HintPath>
+      <HintPath>..\packages\ThinkGeo.MapSuite.Layers.ShapeFile.10.0.312.2\lib\Xamarin.iOS10\ThinkGeo.MapSuite.Layers.ShapeFile.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Xamarin.iOS" />
